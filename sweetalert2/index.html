@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>sweetalert2t</title>
+</head>
+<body>
+    <button class="btn btn-primary container mt-5 text-center" type="button" id="tombol">Log In</button>
+    <script src="dist/sweetalert2.all.min.js"></script>
+    <script>
+        const tombol = document.querySelector('#tombol');
+        tombol.addEventListener('click', function(){
+            let timerInterval;
+                            Swal.fire({
+                            title: "Auto close alert!",
+                            html: "I will close in <b></b> milliseconds.",
+                            icon: 'success',
+                            timer: 2000,
+                            timerProgressBar: true,
+                            didOpen: () => {
+                                Swal.showLoading();
+                                const timer = Swal.getPopup().querySelector("b");
+                                timerInterval = setInterval(() => {
+                                timer.textContent = `${Swal.getTimerLeft()}`;
+                                }, 100);
+                            },
+                            willClose: () => {
+                                clearInterval(timerInterval);
+                            }
+                            }).then((result) => {
+                            /* Read more about handling dismissals below */
+                            if (result.dismiss === Swal.DismissReason.timer) {
+                                console.log("I was closed by the timer");
+                            }
+                            });
+        });
+    </script>
+</body>
+</html>
