@@ -1,0 +1,93 @@
+*, html {
+  margin: 0;
+  padding: 0;
+}
+
+.containernav {
+  background-color: aqua;
+  width: 100%;
+  height: 10vh;
+}
+
+.ulnav {
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.linav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 20px;
+  margin: 5px;
+  color: black;
+
+}
+
+.linav:hover {
+  background-color: white;
+  transition: .5s ease-in-out;
+  transition-delay: .3s;
+  border-radius: 15px;
+}
+
+.anav {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black ;
+  text-decoration: none;
+}
+
+.concon {
+display: flex;
+ background-color: black;
+ height: 85vh;
+ justify-content: center;
+ align-items: center;
+}
+
+.acon {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  font-size: 30px;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.pr{
+  color: white;
+  padding: 20px;
+  text-align: justify;
+  font-size: 50px;
+}
+
+.img {
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+}
+
+.confot {
+  height: 5vh;
+  background-color: gray;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.fot {
+  font-family: Arial;
+  color: white;
+  font-size: 80%;
+}
