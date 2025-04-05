@@ -1,1 +1,1 @@
-console.log("nyoba js")
+console.log("nyoba js") 
